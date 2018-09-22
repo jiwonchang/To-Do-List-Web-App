@@ -1,0 +1,102 @@
+/* Ordered/Organized by level of specificity*/
+
+body {
+	font-family: roboto;
+
+	/*gradient background, theme named "Bora Bora"*/
+	/*go to "uigradients.com*/
+	background: #2bc0e4;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1 {
+	background: #2980b9;
+	color: white;
+	margin: 0 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+ul {
+	list-style: none;
+	margin: 0 0;
+	padding: 0 0;
+}
+
+li {
+	background: #fff;
+	margin: 0 0;
+	/*text-indent: 25px;*/
+	font-weight: 500;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+
+input {
+	width: 100%;
+	background: #f7f7f7;
+	font-size: 18px;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	color: #2980b9;
+	border: none;
+	/*border: 3px solid rgba(0, 0, 0, 0);*/
+}
+
+input:focus {
+	background: #fff;
+	/*border: 3px solid #2980b9;*/
+	/*outline: none;*/
+}
+
+input::placeholder {
+	opacity: 0.8;
+}
+
+/*makes every OTHER entry on the list have a gray background*/
+li:nth-child(2n) {
+	background: #f7f7f7;
+}
+
+/* Selects the span when an li is hovered over */
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
+
+.fa-plus {
+	float: right;
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+
+.delete {
+	background: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	/* sets the transition time between width of 0 to 40 to take 0.2 seconds*/
+	transition: 0.2s;
+	/* this is because the trashcan is still visible even when the width is 0 */
+	opacity: 0;
+}
+
+#container {
+	width: 360px;
+	margin: 100px auto;
+	background: #f7f7f7
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
